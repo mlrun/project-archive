@@ -28,6 +28,10 @@ spec:
     image: mlrun/mlrun
     handler: nuclio_func:nuclio_handler
     with_repo: true
+  - name: sleepjob
+    kind: job
+    image: mlrun/mlrun
+    handller: sleep/sleep_handler
   - url: serving.yaml
     name: serving
     with_repo: true
